@@ -19,7 +19,11 @@ export default function handler(lambda: (evt: APIGatewayProxyEvent, content: Con
     // Return the HTTP response
     return {
       body,
-      statusCode
+      statusCode,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": true,
+      },
     };
   }
 }
