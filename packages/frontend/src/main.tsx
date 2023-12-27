@@ -5,6 +5,7 @@ import { Amplify } from 'aws-amplify';
 
 import App from './App.tsx';
 import config from './config.ts';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
